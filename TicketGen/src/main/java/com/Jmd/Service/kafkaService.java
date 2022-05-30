@@ -8,5 +8,5 @@ public interface kafkaService {
 	
 	public void saveToElastic(Ticket user);
 	
-	public void getByText(String text);
+	public List<Ticket> getByText(String text);
 }
