@@ -31,8 +31,9 @@ public class TokenController {
 	}
 
 	@GetMapping("/getByText/{text}")
-	public void getDesByText(@RequestParam("text") String text) {
-		kService.getByText(text);
+	public List<Ticket> getDesByText(@RequestParam("text") String text) {
+		List<Ticket> result= kService.getByText(text);
+		return result;
 	}
 
 }
