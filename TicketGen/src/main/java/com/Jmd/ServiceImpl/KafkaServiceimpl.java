@@ -32,7 +32,7 @@ public class KafkaServiceimpl implements kafkaService {
 	}
 
 	@Override
-	public void getByText(String text) {
+	public List<Ticket> getByText(String text) {
 		tERepo.findByDescriptionContaining(text);
 	}
 
